@@ -1,0 +1,9 @@
+dependencies {
+    implementation 'org.jmonkeyengine:jme3-core:3.6.0-stable'
+
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.10.1'
+}
+
+test {
+    useJUnitPlatform()
+}
