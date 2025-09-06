@@ -1,0 +1,17 @@
+allprojects {
+    apply plugin: 'java'
+
+    group = 'com.collector'
+    version = '0.1.0'
+
+    repositories {
+        mavenCentral()
+    }
+}
+
+subprojects {
+    tasks.withType(JavaCompile).configureEach {
+        sourceCompatibility = '21'
+        targetCompatibility = '21'
+    }
+}
